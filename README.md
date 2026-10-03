@@ -131,4 +131,4 @@ Contributions, feedback, and suggestions are welcome! If you find any issues or 
 
 ## 📜 License
 
-Distributed under the [MIT License](LICENSE). See `LICENSE` for more information.
+Distributed under the [Apache License](LICENSE). See `LICENSE` for more information.
