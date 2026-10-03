@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c2frgs8ximrod"]
+
+[ext_resource type="Script" uid="uid://djhpkgypfyd7t" path="res://scripts/ui.gd" id="1_nt7q6"]
+[ext_resource type="PackedScene" uid="uid://cgo3fq2mxucaq" path="res://scenes/main.tscn" id="2_x4jx1"]
+
+[node name="ui" type="Control" unique_id=1249613499]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nt7q6")
+
+[node name="Button" type="Button" parent="." unique_id=186104482]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+
+[node name="main" parent="." unique_id=1724415403 instance=ExtResource("2_x4jx1")]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
